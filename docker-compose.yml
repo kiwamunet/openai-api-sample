@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    stdin_open: true
+    volumes:
+      - .:/app/api:consistent
+    tty: true
